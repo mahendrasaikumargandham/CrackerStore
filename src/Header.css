@@ -39,10 +39,12 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .header_searchInput:focus
 {
     outline: none;
 }
+
 .header_searchIcon
 {
     position: relative;
@@ -113,8 +115,6 @@
     z-index: -1;
     filter: invert(0);
 }
-
-
 
 @media (max-width: 768px) {
     .header {

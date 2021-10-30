@@ -11,12 +11,15 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+
 .checkout_right {
     margin-right: 10px;
 }
+
 .checkout_left {
     width: 60%;
 }
+
 .checkout_items {
     background-color: rgba(0, 30, 60);
     border-radius: 5px;
