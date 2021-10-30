@@ -1,0 +1,20 @@
+.footer {
+    background-color: #0c002b;
+}
+.footer > .footer_text {
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer > .footer_text > span {
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .footer > .footer_text {
+        font-size: 15px;
+    }
+}
