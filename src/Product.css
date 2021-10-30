@@ -84,7 +84,7 @@
     width: 100%;
     max-height: 400px;
     min-width: 100px;
-    background: rgb(30, 73, 118);
+    background: rgba(0,89,178);
     z-index: 1;
     border-radius: 5px;
 }
@@ -102,7 +102,7 @@
 }
 .product > .product_buttons > button
 {
-    background: linear-gradient(to right bottom, rgb(0, 127, 255), rgb(0, 89, 178) 120%);
+    background: rgba(0,89,178);
     border: 1px solid #fff;
     margin-top: 10px;
     color: #fff;
