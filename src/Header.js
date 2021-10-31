@@ -36,10 +36,11 @@ function Header() {
                         {/* <span className="header_optionLineOne">Last</span> */}
                         <span className="header_optionLineTwo" onClick={() => themeToggler()}><LightModeIcon /></span>
                     </div>
-                    <div className="header_option">
-                        {/* <span className="header_optionLineOne">Your</span> */}
-                        <span className="header_optionLineTwo"><LoginIcon /></span>
-                    </div>
+                    <Link to="/login">
+                        <div className="header_option">
+                            <span className="header_optionLineTwo"><LoginIcon /></span>
+                        </div>
+                    </Link>
                     <Link to="/settings">
                         <div className="header_option">
                             {/* <span className="header_optionLineOne">Your</span> */}

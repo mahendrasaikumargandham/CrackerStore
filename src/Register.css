@@ -1,0 +1,104 @@
+.register {
+    background-color: #0c002b;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.register__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.register__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.register__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+.register__container > form > h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.register__container > form > input {
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 97%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .register__inf {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+  }
+.register__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.register__signInButton {
+    background: rgb(0, 89, 178);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #fff;
+    font-size: 20px;
+  }
+
+  .register__registerButton {
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: rgb(0, 89, 178);
+    font-size: 20px;
+    color: rgb(0, 89, 178);
+  }
+
+  .register__registerButton a {
+      text-decoration: none;
+      color: rgb(0, 89, 178);
+  }
+  .register__signInWithGoogle {
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: rgb(0, 89, 178);
+    font-size: 20px;
+    color: rgb(0, 89, 178);
+  }
+
+  @media(max-width: 768px) {
+    .register__container {
+        margin-top: 15%;
+        border: none;
+    }
+  }
