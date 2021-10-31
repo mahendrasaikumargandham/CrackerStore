@@ -25,7 +25,7 @@ function Header() {
             <GlobalStyles />
             <div className="header">
                 <Link to="/">
-                    <img className="header_logo" src="/images/Logo.png" alt="" />
+                    <img className="header_logo" src="/images/logo.png" alt="" />
                 </Link>
                 <div className="header_search">
                     <input className="header_searchInput" type="text" />
