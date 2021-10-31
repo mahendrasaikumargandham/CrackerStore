@@ -1,6 +1,5 @@
 .home 
 {
-    background-color: #0c002b;
     justify-content: center;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -23,9 +22,9 @@
     margin-top: 5%;
     margin-bottom: 5%;
     font-weight: 400;
-    background: rgba(0, 30, 60);
+    /* background: rgba(0, 30, 60); */
     border-bottom: 1px solid #fff;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     color: #fff;
 }
 

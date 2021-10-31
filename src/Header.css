@@ -3,11 +3,11 @@
     height: 80px;
     display: flex;
     align-items: center;
-    background: #0c002b;
     position: sticky;
     top: 0;
     z-index: 100;
     border-bottom: 1px solid rgb(0, 89, 178);
+    background-color: #0c002b;
 }
 
 .header_logo
@@ -16,6 +16,7 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 0;
+    border-radius: 10px;
 }
 .header_search
 {
@@ -118,7 +119,7 @@
 
 @media (max-width: 768px) {
     .header {
-        height: 160px;
+        height: 200px;
         display: block;
         overflow-x: hidden;
         align-items: center;
@@ -130,6 +131,7 @@
         object-fit: contain;
         margin: 0 20px;
         margin-left: 20%;
+        margin-top: 20px;
     }
     .header_searchInput {
         margin-left: 10px;
@@ -142,7 +144,7 @@
         display: flex;
         margin-left: 5px;
         margin-right: 5px;
-        margin-top: 10px;
+        margin-top: 20px;
         color: #fff;
         font-weight: 500;
         border: 1px solid rgb(0, 89, 178);
