@@ -5,31 +5,25 @@
     "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "build": "react-scripts build",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "predeploy": "npm --prefix \"$RESOURCE_DIR\" run lint",
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "12"
+    "node": "14"
   },
   "main": "index.js",
   "dependencies": {
-    "@stripe/react-stripe-js": "^1.6.0",
-    "@stripe/stripe-js": "^1.20.3",
-    "babel-eslint": "^10.1.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "firebase-admin": "^9.12.0",
-    "firebase-functions": "^3.16.0",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
     "firebase-tools": "^9.21.0",
-    "lint": "^0.7.0",
-    "request": "^2.88.2",
-    "response": "^0.18.0",
-    "stripe": "^8.185.0"
+    "require": "^2.4.20",
+    "stripe": "^8.186.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^7.6.0",
     "eslint-config-google": "^0.14.0",
     "firebase-functions-test": "^0.2.0"
   },
