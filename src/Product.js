@@ -2,7 +2,9 @@ import React from 'react'
 import "./Product.css";
 import { useStateValue } from './StateProvider';
 import "./Home";
+import { useHistory } from 'react-router';
 function Product({ id, title, image, price, rating }) {
+    const history = useHistory();
     const [{ basket }, dispatch] = useStateValue();
     console.log(basket);
     function addToBasket() {
@@ -23,6 +25,20 @@ function Product({ id, title, image, price, rating }) {
         // addPopUp()
     }
 
+    function buyProduct() {
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+                rating: rating,
+            }
+        })
+        history.push('/payment');
+    }
+
     return (
             <div className="product">
                 <div className="product_info">
@@ -35,7 +51,7 @@ function Product({ id, title, image, price, rating }) {
                 
                     <img src={image} alt="" />
                     <div className="product_buttons">
-                        <button>Buy now</button>
+                        <button onClick={buyProduct}>Buy now</button>
                         <button onClick={addResultFunc}>Add to cart</button>
                     </div>      
             </div>

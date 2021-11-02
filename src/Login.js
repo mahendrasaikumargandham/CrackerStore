@@ -10,15 +10,14 @@ function Login() {
     const [password, setPassword] = useState("");
     const [user, loading, error] = useAuthState(auth);
     const history = useHistory();
-
+    console.log(error);
     useEffect(() => {
         if (loading) {
         // maybe trigger a loading screen
         return;
         }
         if (user) history.push("/");
-    }, [user, loading]);
-
+    }, [user,loading]);
     return (
         <div className="login">
             <div className='login__container'>

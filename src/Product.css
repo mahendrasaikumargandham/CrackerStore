@@ -25,6 +25,10 @@
     margin-bottom: 15px;
     border-radius: 5px;
 }
+.product > .product_buttons {
+    display: flex;
+    flex-direction: row;
+}
 .product > .product_buttons > button
 {
     background: rgba(0,89,178);
@@ -38,6 +42,7 @@
     font-weight: 600;
     cursor: pointer;
 }
+
 .product_price
 {
     margin-top: 5px;

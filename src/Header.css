@@ -117,6 +117,26 @@
     filter: invert(0);
 }
 
+.header_option .tooltiptext {
+  visibility: hidden;
+  bottom: -20px;
+  width: 60px;
+  background-color: rgb(0, 89, 178);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+ .header_option .header_link .header_optionLineTwo {
+        color: #fff;
+    }
+.header_optionLineTwo:hover .tooltiptext {
+    visibility: visible;
+  }
 @media (max-width: 768px) {
     .header {
         height: 200px;
@@ -158,5 +178,13 @@
     .header__optionLineTwo
     {
         font-size: 15px;
+    }
+    .header_option:hover .tooltiptext {
+        visibility: hidden;
+    }
+    .header_option a:visited {
+        background-color: transparent;
+        outline: none;
+        text-decoration: none;
     }
 }
