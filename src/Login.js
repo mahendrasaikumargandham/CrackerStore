@@ -17,7 +17,7 @@ function Login() {
         return;
         }
         if (user) history.push("/");
-    }, [user,loading]);
+    }, [user,loading, history]);
     return (
         <div className="login">
             <div className='login__container'>

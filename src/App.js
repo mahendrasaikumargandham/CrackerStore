@@ -40,7 +40,7 @@ function App() {
         });
       }
     });
-  }, []);
+  }, [dispatch]);
   const [ theme, setTheme ] = useState("light");
   console.log(setTheme);
   return (

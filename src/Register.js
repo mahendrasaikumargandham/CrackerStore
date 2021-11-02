@@ -23,7 +23,7 @@ function Register() {
   useEffect(() => {
     if (loading) return;
     if (user) history.replace("/");
-  }, [user, loading]);
+  }, [user, loading, history]);
 
     return (
             <div className="register">

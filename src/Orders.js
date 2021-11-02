@@ -7,7 +7,8 @@ import { useStateValue } from './StateProvider';
 function Orders() {
     const [{ basket, user }, dispatch] = useStateValue();
     const [orders, setOrders] = useState([]);
-
+    console.log(basket);
+    console.log(dispatch);
     useEffect(() => {
         if(user) {
             db.collection('users').doc(user?.uid).collection('orders').orderBy('created', 'desc').onSnapshot(snapshot => (setOrders(snapshot.docs.map(doc => ({ 
@@ -18,7 +19,7 @@ function Orders() {
         } else {
             setOrders([])
         }
-    }, [])  
+    }, [user])  
     return (
         <div className="orders">
             <div className="orders_order">

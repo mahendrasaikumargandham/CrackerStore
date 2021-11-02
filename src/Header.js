@@ -64,7 +64,7 @@ function Header() {
                             </span>
                         </Link>
                     </div>
-                    <Link to="/login">
+                    <Link to="/register">
                         <div onClick={handleAuthenticaton} className="header_option">
                             <span className="header_optionLineTwo">
                                 <span class="tooltiptext">{user ? "Signout" : "sign in" }</span> 

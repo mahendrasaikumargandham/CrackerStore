@@ -14,14 +14,14 @@ function Payment() {
     const history = useHistory();
 
     const stripe = useStripe();
-    const elements = useElements();
-
+    const elements = useElements(''); 
+    console.log(elements);
     const [succeeded, setSucceeded] = useState(false);
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
     const [clientSecret, setClientSecret] = useState(true);
-
+    console.log(disabled);
     useEffect(() => {
         const getClientSecret = async () => {
             const response = await axios({
