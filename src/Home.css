@@ -32,7 +32,7 @@
     .home > .home_container > .home_row {
         flex-direction: column;
         position: relative;
-        width: 82%;   
+        width: 84%;   
         margin-left: 0;
     }
     .home_image {
