@@ -45,8 +45,12 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-
-            db.collection('users').doc(user?.uid).collection('orders').doc(paymentIntent.id).set({
+            db
+              .collection('users')
+              .doc(user?.uid)
+              .collection('orders')
+              .doc(paymentIntent.id)
+              .set({
                   basket: basket,
                   amount: paymentIntent.amount,
                   created: paymentIntent.created

@@ -15,7 +15,9 @@ function Settings() {
                 <Link to="/checkout">
                     <h2>Cart</h2>
                 </Link>
-                <h2>History</h2>
+                <Link to="/orders">
+                    <h2>History</h2>
+                </Link>
                 <h2>Login</h2>
                 <h2>About</h2>
                 <h2>Contact</h2>
