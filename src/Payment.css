@@ -1,6 +1,7 @@
 .payment {
     background-color: #fff;
     color: #000000;
+    overflow-x: hidden;
 }
 
 .payment_container > h1 {
@@ -8,10 +9,13 @@
     padding: 10px;
     font-weight: 400;
     border-bottom: 1px solid lightgray;
+    background-color: #0c002b;
+    color: #fff;
   }
 
 .payment_container > h1 a {
     text-decoration: none;
+    color: rgb(0, 89, 178);
 }
 
 .payment_section {
@@ -51,4 +55,14 @@
     margin-top: 10px;
     border-color: #fff;
     color: #fff;
+  }
+
+  @media(max-width: 768px) {
+    .payment_section {
+      display: flex;
+      flex-direction: column;
+    }
+    .payment_title h2 {
+      margin-bottom: 10px;
+    }
   }

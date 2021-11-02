@@ -79,7 +79,7 @@ function Payment() {
             <div className="payment_container">
                 <h1>Checkout <Link to="/checkout">{basket.length} items</Link></h1>
                 <div className="payment_section">
-                    <div className="payment_title"><h2>Checkout</h2></div>
+                    <div className="payment_title"><h2>Address.</h2></div>
                     <div className="payment_address">
                         <p>{user?.email}</p>
                         <p>D.No: 1-2-3,</p>
@@ -96,6 +96,7 @@ function Payment() {
                                 image={item.image}
                                 price={item.price}
                                 rating={item.rating}
+                                hideButton
                             />
                         ))}
                     </div>
