@@ -81,7 +81,6 @@ const registerWithEmailAndPassword = async (name, email, password) => {
     const user = res.user;
     await db.collection("users").add({
       uid: user.uid,
-      name,
       authProvider: "local",
       email,
     });

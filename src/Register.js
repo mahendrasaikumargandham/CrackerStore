@@ -20,7 +20,6 @@ function Register() {
   console.log(setName);
   console.log(error);
   const register = () => {
-    if (!name) alert("Please enter name");
     registerWithEmailAndPassword(name, email, password);
   };
 
