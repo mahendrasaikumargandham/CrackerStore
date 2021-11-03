@@ -22,12 +22,12 @@ function About() {
                     
                 </div>
                 <div className="about_social">
-                        <span><Link to="https://github.com/mahendrasaikumargandham"><GitHubIcon /></Link></span>
-                        <span><Link to="https://www.youtube.com/channel/UCIf7QLKvNYQIFCRxCe-j8dQ"><YouTubeIcon /></Link></span>
-                        <span><Link to="https://www.linkedin.com/in/mahendra-gandham-7066b51b9/"><LinkedInIcon /></Link></span>
-                        <span><Link to="https://www.instagram.com/mahendra_4919/"><InstagramIcon /></Link></span>
-                        <span><Link to="https://www.facebook.com/mahendra.gandham.3/"><FacebookIcon /></Link></span>
-                        <span><Link to="https://twitter.com/mahendra_4919"><TwitterIcon /></Link></span>
+                        <span><a href="https://github.com/mahendrasaikumargandham"><GitHubIcon /></a></span>
+                        <span><a href="https://www.youtube.com/channel/UCIf7QLKvNYQIFCRxCe-j8dQ"><YouTubeIcon /></a></span>
+                        <span><a href="https://www.linkedin.com/in/mahendra-gandham-7066b51b9/"><LinkedInIcon /></a></span>
+                        <span><a href="https://www.instagram.com/mahendra_4919/"><InstagramIcon /></a></span>
+                        <span><a href="https://www.facebook.com/mahendra.gandham.3/"><FacebookIcon /></a></span>
+                        <span><a href="https://twitter.com/mahendra_4919"><TwitterIcon /></a></span>
                     </div>
             </div>
         </div>
