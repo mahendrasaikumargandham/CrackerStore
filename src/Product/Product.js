@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Product.css";
-import { useStateValue } from './StateProvider';
-import "./Home";
+import { useStateValue } from '../StateProvider';
+import "../Home/Home";
 import { useHistory } from 'react-router';
 function Product({ id, title, image, price, rating }) {
     const history = useHistory();

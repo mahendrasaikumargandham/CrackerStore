@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme, GlobalStyles } from "./themes"; 
+import { lightTheme, darkTheme, GlobalStyles } from "../themes/themes"; 
 import LightModeIcon from '@mui/icons-material/LightMode';
 import HomeIcon from '@mui/icons-material/Home';
 import ReceiptIcon from '@mui/icons-material/Receipt';
-import { auth } from "./firebase";
+import { auth } from "../firebase";
 
 
 function Header() {

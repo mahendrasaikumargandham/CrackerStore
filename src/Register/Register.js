@@ -8,7 +8,7 @@ import {
   registerWithEmailAndPassword,
   signInWithGoogle,
   signInWithGithub
-} from "./firebase";
+} from "../firebase";
 import "./Register.css";
 
 function Register() {

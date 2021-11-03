@@ -1,6 +1,6 @@
 import React from 'react';
 import './CheckoutProduct.css'
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 import DeleteIcon from '@mui/icons-material/Delete';
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {

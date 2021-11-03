@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
-import Footer from "./Footer";
-import Checkout from "./Checkout";
-import Settings from "./Settings";
-import Login from "./Login";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import Footer from "./Footer/Footer";
+import Checkout from "./Checkout/Checkout";
+import Settings from "./Settings/Settings";
+import Login from "./Login/Login";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { lightTheme, darkTheme, GlobalStyles } from "./themes"; 
-import Register from "./Register";
-import Payment from "./Payment";
-import Orders from "./Orders";
+import { lightTheme, darkTheme, GlobalStyles } from "./themes/themes"; 
+import Register from "./Register/Register";
+import Payment from "./Payment/Payment";
+import Orders from "./Orders/Orders";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import About from "./About";
+import About from "./About/About";
 
 const promise = loadStripe("pk_test_51IBzz3CCd7GXDkwRVKgyq3dVpSWe00IDYSe9C4PewrtgiAovJmOrFEGDfzGF7fDDzzDASBfQmN5T7OvDPSu3ttPp004wDHUjb9");
 function App() {
