@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import GoogleIcon from '@mui/icons-material/Google';
 import {
   auth,
   registerWithEmailAndPassword,
   signInWithGoogle,
+  signInWithGithub
 } from "./firebase";
 import "./Register.css";
 
@@ -14,6 +17,7 @@ function Register() {
   const [name, setName] = useState("");
   const [user, loading, error] = useAuthState(auth);
   const history = useHistory();
+  console.log(setName);
   console.log(error);
   const register = () => {
     if (!name) alert("Please enter name");
@@ -28,15 +32,15 @@ function Register() {
     return (
             <div className="register">
               <div className="register__container">
-                  <h1>Register</h1>
+                  <h1>Enter</h1>
                   <form>
-                    <h2>Name</h2>
+                    {/* <h2>Name</h2>
                     <input
                         type="text"
                         className="register__textBox"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                    />
+                    /> */}
                     <h2>E mail</h2>
                     <input
                         type="text"
@@ -60,15 +64,23 @@ function Register() {
                 </p>
                 <button
                   className="login__signInWithGoogle"
+                  onClick={signInWithGithub}
+                >
+                  <span><GitHubIcon className="login__signinlogo" /></span>
+                  <p>Enter with GitHub</p>
+                </button>
+                <button
+                  className="login__signInWithGoogle"
                   onClick={signInWithGoogle}
                 >
-                  Register with Google
+                <span><GoogleIcon className="login__signinlogo" /></span>
+                  <p>Enter with Google</p>
                 </button>
-        
+{/*         
                 <p className="register__inf">
                   Already have an account?
                 </p>
-                <button className='register__registerButton'><Link to="/login">Sign in</Link></button>
+                <button className='register__registerButton'><Link to="/login">Sign in</Link></button> */}
               </div>
             </div>
           );
