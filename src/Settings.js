@@ -19,7 +19,9 @@ function Settings() {
                     <h2>History</h2>
                 </Link>
                 <h2>Login</h2>
-                <h2>About</h2>
+                <Link to="/about">
+                    <h2>About</h2>
+                </Link>
                 <h2>Contact</h2>
                
             </div>

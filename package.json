@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.2.0",
     "firebase-admin": "^10.0.0",
     "firebase-tools": "^9.21.0",

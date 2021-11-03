@@ -1,0 +1,81 @@
+.about {
+    color: #fff;
+    overflow-x: hidden;
+}
+.about_container {
+    width: 80%;
+    background: rgb(0, 89, 178);
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.about_container > .about_title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.about_container > .content_box {
+    font-size: 20px;
+    margin: 10px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.content_box .about_pOne {
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content_box .about_pTwo {
+    margin-top: 10px;
+}
+.about_social {
+    width: 28%;
+    background-color: rgb(0, 30, 60);
+    display: inline-block;
+    padding: 10px;
+    margin-left: 33%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.about_social span {
+    padding-left: 20px;
+}
+.about_social span a {
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .about_social {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        background-color: rgb(0, 30, 60);
+        padding: 10px;
+        margin-left: 5%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .about_social span {
+        padding-left: 10px;
+    }
+    .about_container > .content_box {
+        padding-left: 5px;
+    }
+    .about_container > .about_title {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .content_box h3 {
+        font-weight: 300;
+    }
+    .pOne {
+        font-weight: 600;
+    }
+}
+
+
