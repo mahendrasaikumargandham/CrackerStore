@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="home">
             <div className="home_container">
-                <h1 className="home_image">Get your favourite crackers at reasonable cost</h1>
+                <h1 className="home_image">Get your favourite crackers at reasonable cost.</h1>
                 <div className="home_row">
                     <Product id="1234517" title="Diwali Combo Pack" image="/images/combopack.jpeg" price={1099} rating={4} />
                     <Product id="1234519" title="Puja Samagri" image="/images/puja.jpeg" price={499} rating={4} />
