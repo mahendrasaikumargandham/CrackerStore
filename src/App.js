@@ -17,6 +17,8 @@ import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import About from "./About/About";
+import Menu from "./Menu/Menu";
+import HeaderClose from "./Header/HeaderClose";
 
 const promise = loadStripe("pk_test_51IBzz3CCd7GXDkwRVKgyq3dVpSWe00IDYSe9C4PewrtgiAovJmOrFEGDfzGF7fDDzzDASBfQmN5T7OvDPSu3ttPp004wDHUjb9");
 function App() {
@@ -68,6 +70,7 @@ function App() {
               <Login />
             </Route>
             <Route path="/register">
+              <Header /> 
               <Register />
             </Route>
             <Route path="/settings">
@@ -77,6 +80,10 @@ function App() {
             <Route path="/about">
             <Header />
               <About />
+            </Route>
+            <Route path="/menu">
+              <HeaderClose />
+              <Menu />
             </Route>
             <Route path="/">
             <Header />

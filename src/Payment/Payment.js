@@ -121,7 +121,7 @@ function Payment() {
                                             prefix={"₹"}
                                             />
                                     </div>
-                                    <button disabled={processing || succeeded}><span>{processing ? <p>Processing</p> : "Buy Now"}</span></button>
+                                    <button disabled={processing || succeeded}><span>{processing ? "Processing" : "Buy Now"}</span></button>
                                     {error && <div>{error}</div>}
                                 </form>
                             

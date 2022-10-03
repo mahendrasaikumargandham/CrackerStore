@@ -57,6 +57,9 @@
     color: #fff;
   }
 
+  .payment_details > form > button span {
+    background-color: transparent;
+  }
   @media(max-width: 768px) {
     .payment_section {
       display: flex;

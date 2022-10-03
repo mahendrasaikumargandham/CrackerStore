@@ -15,12 +15,14 @@
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    background-color: transparent;
 }
 .about_container > .content_box {
     font-size: 20px;
     margin: 10px;
     padding-left: 15px;
     font-weight: 400;
+    background: transparent;
 }
 
 .content_box .about_pOne {

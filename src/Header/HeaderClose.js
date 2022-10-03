@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import { auth } from "../firebase";
 
-function Header() {
+function HeaderClose() {
     const handleAuthenticaton = () => {
         if (user) {
           auth.signOut();
@@ -16,7 +16,7 @@ function Header() {
         <div className="header">
             <div className="header_logo">
                 <h2>Cracker Store</h2>
-                <Link to = '/menu' className = "menu">Menu</Link>
+                <Link to = '/' className = "menu">Close</Link>
             </div>
             <nav className="header_nav">
                 <div className="header_option">
@@ -62,4 +62,4 @@ function Header() {
     )
 }
 
-export default Header
+export default HeaderClose
