@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+* {
+    background-color: #222;
+}
+h1, h2, h3, h4, h5, h6, p {
+    background-color: transparent;
+}
+body {
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+}
+

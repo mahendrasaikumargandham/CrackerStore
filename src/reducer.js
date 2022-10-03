@@ -33,7 +33,7 @@ const reducer = (state, action) => {
       let newBasket = [...state.basket];
 
       if (index >= 0) {
-        newBasket.splice(index, 1);
+        newBasket.splice(index, 2);
 
       } else {
         console.warn(

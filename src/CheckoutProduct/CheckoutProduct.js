@@ -1,7 +1,6 @@
 import React from 'react';
 import './CheckoutProduct.css'
 import { useStateValue } from "../StateProvider";
-import DeleteIcon from '@mui/icons-material/Delete';
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     const [{ basket }, dispatch] = useStateValue();
@@ -16,7 +15,6 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     return (
         <div className='checkoutProduct'>
             <img className='checkoutProduct__image' src={image} alt="" />
-
             <div className='checkoutProduct__info'>
                 <p className='checkoutProduct__title'>{title}</p>
                 <p className="checkoutProduct__price">
@@ -31,7 +29,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     ))}
                 </div>
                 {!hideButton && (
-                    <button onClick={removeFromBasket}><DeleteIcon className="checkoutProduct__delete" /><p>Remove from Cart</p></button>
+                    <button onClick={() => removeFromBasket()}><p>Remove from Cart</p></button>
                 )}
             </div>
         </div>

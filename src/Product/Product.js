@@ -3,6 +3,8 @@ import "./Product.css";
 import { useStateValue } from '../StateProvider';
 import "../Home/Home";
 import { useHistory } from 'react-router';
+import { auth } from "../firebase";
+
 function Product({ id, title, image, price, rating }) {
     const history = useHistory();
     const [{ basket }, dispatch] = useStateValue();
@@ -26,17 +28,21 @@ function Product({ id, title, image, price, rating }) {
     }
 
     function buyProduct() {
-        dispatch({
-            type: 'ADD_TO_BASKET',
-            item: {
-                id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating,
-            }
-        })
-        history.push('/payment');
+        if (auth) {
+            dispatch({
+                type: 'ADD_TO_BASKET',
+                item: {
+                    id: id,
+                    title: title,
+                    image: image,
+                    price: price,
+                    rating: rating,
+                }
+            })
+            history.push('/payment');
+        } else {
+            history.push('/register');
+        }
     }
 
     return (

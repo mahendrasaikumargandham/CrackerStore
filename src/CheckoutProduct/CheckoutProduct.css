@@ -2,11 +2,38 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 24px;
+    box-shadow: rgb(124 127 255) 0px 0px 12px;
+    border-radius: 24px;
 }
 
-.checkoutProduct__info {
-    padding-left: 50px
+.checkoutProduct__image {
+    background-color: transparent;
 }
+
+small, strong {
+    background: transparent;
+}
+
+.checkoutProduct__rating {
+    background: transparent;
+}
+.checkoutProduct:nth-child(odd) {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(124, 127, 255) 180%);
+    border: 1px solid rgb(124, 127, 255);
+}
+
+.checkoutProduct:nth-child(even) {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(255, 215, 77) 180%);
+    border: 1px solid rgb(255, 215, 77);
+    box-shadow: rgb(255 215 77) 0px 0px 12px;
+}
+
+.checkoutProduct .checkoutProduct__info {
+    padding-left: 50px;
+    background: transparent;
+}
+
 
 .checkoutProduct__delete {
     padding: 0;
@@ -15,18 +42,22 @@
 }
 
 .checkoutProduct__info > button {
-    background: rgb(0, 89, 178);
-    border: 1px solid #fff;
-    border-radius: 5px;
+    background: #fff;
+    clip-path: polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px);
     margin-top: 10px;
     padding: 10px 10px;
-    color: #fff;;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
     text-align: center;
     display: flex;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
 }
+.checkoutProduct__info > button p {
+    font-size: 15px;
+    font-weight: 800;
+}
+
 
 .checkoutProduct__info > button > p {
     padding-top: 5px;
@@ -63,17 +94,13 @@
     .checkoutProduct__image {
         width: 100px;
         height: 100px;
-        margin-left: 10px;
-      }
-      .checkoutProduct__info {
-          padding-left: 30px;
+        align-self: center;
       }
       .checkoutProduct__title {
         font-size: 20px;
       }
       .checkoutProduct__info > button {
           padding: 5px 5px;
-          margin-left: 5px;
           margin-bottom: 10px;
           font-size: 13px;
           font-weight: 500;
@@ -85,5 +112,10 @@
       .checkoutProduct__rating {
           font-size: 17px;
       }
-      
+      .checkoutProduct {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 20px;
+      }
 }

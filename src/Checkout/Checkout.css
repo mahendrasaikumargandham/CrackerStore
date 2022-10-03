@@ -4,6 +4,7 @@
     height: max-content;
     justify-content: space-between;
     color: #fff;
+    background-color: #222;
 }
 
 .checkout_title {
@@ -21,7 +22,7 @@
 }
 
 .checkout_items {
-    background-color: rgba(0, 30, 60);
+    background-color: #222;
     border-radius: 5px;
 }
 
@@ -35,7 +36,7 @@
         width: 100%;
     }
     .checkout_right {
-        margin-left: 0;
+        width: 86%;
     }
     .checkout_title {
         width: 93%;

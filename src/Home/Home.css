@@ -4,6 +4,8 @@
     overflow-x: hidden;
     box-sizing: border-box;
     color: #fff;
+    background: #222;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 .home > .home_container > .home_row
 {
@@ -15,15 +17,11 @@
     margin-right: 10px;
 }
 .home_image {
-    width: 50%;
     padding: 10px 10px;
-    margin-left: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 400;
-    /* background: rgba(0, 30, 60); */
-    border-bottom: 1px solid #fff;
-    /* border-radius: 30px; */
     color: #fff;
 } 
 
@@ -32,8 +30,8 @@
     .home > .home_container > .home_row {
         flex-direction: column;
         position: relative;
-        width: 84%;   
-        margin-left: 0;
+        width: 75%;   
+        /* margin-left: 5px; */
     }
     .home_image {
         width: 75%;
@@ -43,5 +41,9 @@
         text-align: center;
         border-radius: 0;
         background: transparent;
+    }
+
+    .home h1 {
+        font-size: 15px;
     }
 }

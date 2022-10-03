@@ -1,5 +1,6 @@
 .product
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +10,29 @@
     width: 100%;
     max-height: 400px;
     min-width: 100px;
-    background: rgba(0,89,178);
+    border: 4px solid rgb(64, 221, 255);
+    background: linear-gradient(rgb(124, 127, 255) 0%, rgb(64, 221, 255) 100%);
+    transition: all 0.4s cubic-bezier(0.8, -1, 0.2, 1.5) 0s;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 10px;
 }
+
+.product::after {
+    background-image: url(./sparkle.gif);
+    background-size: cover;
+    background-position: center center;
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    mix-blend-mode: color-dodge;
+    opacity: 0.5;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
 .product_rating
 {
     display: flex;
@@ -24,15 +44,19 @@
     object-fit: contain;
     margin-bottom: 15px;
     border-radius: 5px;
+    background-color: transparent;
 }
 .product > .product_buttons {
     display: flex;
     flex-direction: row;
+    background-color: transparent;
 }
 .product > .product_buttons > button
 {
-    background: rgba(0,89,178);
-    border: 1px solid #fff;
+    clip-path: polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px);
+    background: #222;
+    border: none;
+    outline: none;
     margin-top: 10px;
     color: #fff;
     margin: 10px;
@@ -40,32 +64,42 @@
     border-radius: 5px;
     font-size: 15px;
     font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
-.product_price
+.product > .product_buttons > button:hover {
+    transform: rotate(2deg);
+}
+.product_price strong, .product_price small
 {
     margin-top: 5px;
+    background-color: transparent;
 }
 .product_info
 {
     height: 100px;
     margin-bottom: 15px;
+    background-color: transparent;
 }
 
 .product_info > .product_title {
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: transparent;
 }
 
 .product_info > .product_rating {
     margin-top: 10px;
     font-size: 20px;
     letter-spacing: 3px;
+    background-color: transparent;
 }
 
 .product_popup {
     background-color: #fff;
+    
 }
 @media (max-width:768px) {
     .header {

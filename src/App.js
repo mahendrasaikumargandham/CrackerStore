@@ -52,7 +52,7 @@ function App() {
           <Switch>
             <Route path="/checkout">
             <Header />
-              <Checkout />
+            <Checkout />
             </Route>
             <Route path="/payment">
               <Header />

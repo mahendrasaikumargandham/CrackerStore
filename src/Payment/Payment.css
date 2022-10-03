@@ -9,7 +9,7 @@
     padding: 10px;
     font-weight: 400;
     border-bottom: 1px solid lightgray;
-    background-color: #0c002b;
+    background-color: transparent;
     color: #fff;
   }
 
@@ -64,5 +64,11 @@
     }
     .payment_title h2 {
       margin-bottom: 10px;
+    }
+    .payment_container > h1 {
+      font-size: 15px;
+    }
+    h1, h2, h3, p {
+      color: #fff;
     }
   }

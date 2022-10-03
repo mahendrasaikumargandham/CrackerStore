@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useHistory } from "react-router-dom";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import GoogleIcon from '@mui/icons-material/Google';
 import {
   auth,
   registerWithEmailAndPassword,
@@ -33,13 +31,6 @@ function Register() {
               <div className="register__container">
                   <h1>Enter</h1>
                   <form>
-                    {/* <h2>Name</h2>
-                    <input
-                        type="text"
-                        className="register__textBox"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    /> */}
                     <h2>E mail</h2>
                     <input
                         type="text"
@@ -65,14 +56,12 @@ function Register() {
                   className="login__signInWithGoogle"
                   onClick={signInWithGithub}
                 >
-                  <span><GitHubIcon className="login__signinlogo" /></span>
                   <p>Enter with GitHub</p>
                 </button>
                 <button
                   className="login__signInWithGoogle"
                   onClick={signInWithGoogle}
                 >
-                <span><GoogleIcon className="login__signinlogo" /></span>
                   <p>Enter with Google</p>
                 </button>
 {/*         
