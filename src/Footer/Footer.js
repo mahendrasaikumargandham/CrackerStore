@@ -37,7 +37,7 @@ function Footer() {
                     <Link to = "/">Help</Link>
                 </div>
             </div>
-            <h2 className="footer_text">Developed with <span>♥️</span>  by Mahendra Gandham</h2>
+//             <h2 className="footer_text">Developed with <span>♥️</span>  by Mahendra Gandham</h2>
         </div>
     )
 }
