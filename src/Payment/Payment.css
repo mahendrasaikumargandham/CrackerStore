@@ -1,6 +1,6 @@
 .payment {
     background-color: #fff;
-    color: #000000;
+    color: #fff;
     overflow-x: hidden;
 }
 
@@ -33,7 +33,6 @@
     flex: 0.8;
 }
 
-  
 .payment_details > form {
     max-width: 400px;
   }
